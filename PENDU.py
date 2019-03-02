@@ -13,7 +13,7 @@ def choisirMOT(): #cette fonction permet de prendre un mot hasard dans un fichie
     mots=motsFR.readlines() #lis chaque ligne du fichier
 
     for i in mots:
-        motsJ=mots[randint(0,15)] #choisis une ligne au hasard dans le fichier texte
+        motsJ=mots[randint(0,323470)] #choisis une ligne au hasard dans le fichier texte
         
     mot=list(motsJ) #transforme le mot en une liste de lettres
     mot.pop() #supprime le dernier élément de la liste: le "ENTER"
