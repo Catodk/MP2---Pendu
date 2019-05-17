@@ -29,14 +29,14 @@ def CreerJeuDepart():
 
 def untourpendu():
 
-    lettre=str(input('Choisir une lettre:')) #le joueur rentre une lettre
+    lettre=str(input('Pick a letter:')) #le joueur rentre une lettre
 
     for i in range (len(lettresdevinees)):
         if lmotadeviner[i]==lettre:
             lettresdevinees[i]=lettre #remplace le _ par la lettre si elle est correctement devinée
 
     if lettre not in lmotadeviner:
-        print(lettre, "n'est pas dans le mot! Essayez-en une autre") #si la lettre est faussement devinée, ceci est affiché
+        print(lettre, "isn't in the word, try again hoe.") #si la lettre est faussement devinée, ceci est affiché
         dessindupendu() #dessine le bonhomme
 
     print(" ".join(lettresdevinees))
@@ -54,9 +54,9 @@ def tourspendu(): #mise en place du debut du jeu et verification de victoire/def
         tour=tour+1 #on rajoute un tour à chaque fois qu'on joue
 
     if '_' in lettresdevinees:
-        print("Dommage ! Vous n'avez pas trouvé") #si à la fin de 11 fautes le mot n'est toujours pas complet, c'est perdu
+        print("Jayloser!!!!") #si à la fin de 11 fautes le mot n'est toujours pas complet, c'est perdu
     else:
-        print("Bravo!! Vous avez gagné") #sinon, c'est gagné
+        print("You won!!!!!!!!!") #sinon, c'est gagné
     print("Le mot était", "".join(lmotadeviner)) #le mot est affiché
     time.sleep(3)
     exit()
